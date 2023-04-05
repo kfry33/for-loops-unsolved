@@ -7,11 +7,8 @@ export function getFirstTenNumbers() {
   // Your code goes here...
     const numbers = [];
     for (var i = 1; i <= 10; i++) {
-      if (numbers.length <= 10) {
         numbers.push(i);
-      }
     }
-    
   return numbers;
 }
 console.log(getFirstTenNumbers());
