@@ -20,18 +20,6 @@ export function getClientsWithLetterInName(array, letter) {
 
 
 
-// export function getClientsWithLetterInName(array, letter) {
-//   // Your code goes here...
-//   let namesWLetter = [];
-  
-//   for (let item of array) {
-//     let text = item.name.toLowerCase();
-//       if (text.includes(letter)) {
-//          namesWLetter.push(item.name);
-//       }
-//     } return namesWLetter;
-// }
-
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-10"
 // If the test has all tests passed, switch to the next exercise file
