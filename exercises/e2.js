@@ -5,15 +5,12 @@
 export function getNumbersWithSquareRoots(max) {
   // Your code goes here...
     const numbers = [];
-    for (let i = 0; i <= max; i++) {
-      if (Math.sqrt(i) % 1 === 0){
-        numbers.push(i);
-      }
+    for (let i = 0; i * i <= max; i++) {
+      numbers.push(i * i);
     }
    return numbers;
   }
   
-  console.log(getNumbersWithSquareRoots(32));
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-2"
