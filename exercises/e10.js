@@ -9,11 +9,28 @@ export function getClientsWithLetterInName(array, letter) {
   
   for (let item of array) {
     let text = item.name.toLowerCase();
-      if (text.includes(letter)) {
+    for (let j = 0; j <= text.length; j++) {
+      if (text[j] === letter) {
          namesWLetter.push(item.name);
       }
+    }
+      
     } return namesWLetter;
 }
+
+
+
+// export function getClientsWithLetterInName(array, letter) {
+//   // Your code goes here...
+//   let namesWLetter = [];
+  
+//   for (let item of array) {
+//     let text = item.name.toLowerCase();
+//       if (text.includes(letter)) {
+//          namesWLetter.push(item.name);
+//       }
+//     } return namesWLetter;
+// }
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-10"
